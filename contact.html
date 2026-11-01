@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nous contacter</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="accueil.html"
+          ><img
+            src="./assets/image/logo 2.svg"
+            alt="logo les pattes libres"
+            width="200"
+            height="100"
+        /></a>
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="adoption.html">Adopter</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Un coup de coeur pour l'un de nos animaux ?</h1>
+      <h2>Découvrer nos horraires d'ouverture</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Jour</th>
+            <th>Matin</th>
+            <th>Après-midi</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Lundi</td>
+          <td>Fermé</td>
+          <td>Fermé</td>
+        </tr>
+        <tr>
+          <td>Mardi</td>
+          <td>Fermé</td>
+          <td>14 h – 18 h</td>
+        </tr>
+        <tr>
+          <td>Mercredi</td>
+          <td>10 h – 12 h</td>
+          <td>14 h – 18 h</td>
+        </tr>
+        <tr>
+          <td>Jeudi</td>
+          <td>Fermé</td>
+          <td>14 h – 18 h</td>
+        </tr>
+        <tr>
+          <td>Vendredi</td>
+          <td>Fermé</td>
+          <td>14 h – 18 h</td>
+        </tr>
+        <tr>
+          <td>Samedi</td>
+          <td>10 h – 12 h</td>
+          <td>14 h – 18 h</td>
+        </tr>
+        <tr>
+          <td>Dimanche</td>
+          <td>10 h – 12 h</td>
+          <td>Fermé</td>
+        </tr>
+      </table>
+      <hr />
+      <h2>Demande d'adoption</h2>
+      <form action="">
+        <fieldset>
+          <legend>FORMULAIRE</legend>
+          <br />
+          <legend><strong>Vos coordonées</strong></legend>
+          <hr />
+          <label for="nom"> Nom :</label>
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            required
+            autocomplete="off"
+            placeholder=" Entrer votre nom"
+          />
+          <br />
+          <br />
+          <label for="prenom"> Prénom :</label>
+          <input
+            type="text"
+            id="prenom"
+            name="prenom"
+            required
+            autocomplete="off"
+            placeholder=" Entrer votre prénom"
+          />
+          <br />
+          <br />
+          <label for="e-mail"> E-mail :</label>
+          <input
+            type="email"
+            id="e-mail"
+            name="e-mail"
+            required
+            autocomplete="off"
+            placeholder=" Entrer votre E-mail"
+          />
+          <br />
+          <br />
+          <label for="tel"> Téléphone :</label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            required
+            autocomplete="off"
+            placeholder=" Entrer votre Téléphone"
+          />
+          <br />
+          <br />
+          <legend><strong>Votre projet</strong></legend>
+          <hr />
+          <label for="animal">Choississez un animal</label>
+          <select name="animal" id="" required>
+            <option value="">Choissisez un animal</option>
+            <option value="">Milo (chien)</option>
+            <option value="">Nala (chienne)</option>
+            <option value="">Biscuit (chien)</option>
+            <option value="">Pistache (chatte)</option>
+            <option value="">Gribouille (chat)</option>
+            <option value="">Moka (chatte)</option>
+          </select>
+          <br />
+          <br />
+          <label for="logement"> Votre logement : </label>
+          <br />
+          <input type="radio" id="appartement" name="appartement" />
+          <label for="appartement"> Appartement </label>
+          <br />
+          <input type="radio" id="maison" name="maison" />
+          <label for="maison"> Maison sans jardin </label>
+          <br />
+          <input type="radio" id="maison_jardin" name="maison_jardin" />
+          <label for="maison_jardin"> Maison avec jardin </label>
+          <br />
+          <br />
+          <label for="animal"> Je possèdes un ou plusieur animal(aux) : </label>
+          <input type="checkbox" id="animal" />
+          <br />
+          <br />
+          <label for="message"> Quel est votre projet ? </label>
+          <textarea
+          id="message" 
+          cols="20" 
+          rows="5" 
+          placeholder=" Entrer votre message">
+          </textarea>
+          <br />
+          <br />
+          <label for="donnees">
+            J'accepte que mes données soient utilisées pour traiter ma demande :
+          </label>
+          <input type="checkbox" id="donnes" />
+          <br>
+          <br>
+          <button type="submit">Envoyer ma demande</button>
+        </fieldset>
+      </form>
+      <h2>Nous trouver</h2>
+      <p><strong>Refuge Les Pattes Libres</strong></p>
+      <p><strong>12 chemin des Tilleuls</strong></p>
+      <p><strong>69009 Lyon</strong></p>
+      <p>Bus 19, arrêt « Les Tilleuls », puis 5 minutes à pied. Parking gratuit devant le refuge. </p>
+    </main>
+    <footer>
+      <p><strong>Refuge Les Pattes Libres</strong></p>
+      <p>12 chemin des Tilleuls, 69009 Lyon</p>
+      <p>© 2026 Les Pattes Libres</p>
+    </footer>
+  </body>
+</html>
