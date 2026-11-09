@@ -26,8 +26,8 @@
 
     <main>
       <h1>Un coup de coeur pour l'un de nos animaux ?</h1>
-      <h2>Découvrer nos horraires d'ouverture</h2>
-      <table border="1">
+      <h2>Découvrez nos horaires d'ouverture</h2>
+      <table>
         <thead>
           <tr>
             <th>Jour</th>
@@ -35,6 +35,7 @@
             <th>Après-midi</th>
           </tr>
         </thead>
+        <tbody>
         <tr>
           <td>Lundi</td>
           <td>Fermé</td>
@@ -70,14 +71,15 @@
           <td>10 h – 12 h</td>
           <td>Fermé</td>
         </tr>
+        </tbody>
       </table>
       <hr />
       <h2>Demande d'adoption</h2>
-      <form action="">
+      <form id="formulaire" action="#formulaire" method="get">
         <fieldset>
           <legend>FORMULAIRE</legend>
-          <br />
-          <legend><strong>Vos coordonées</strong></legend>
+          <fieldset>
+            <legend>Vos coordonnées</legend>
           <hr />
           <label for="nom"> Nom :</label>
           <input
@@ -85,7 +87,7 @@
             id="nom"
             name="nom"
             required
-            autocomplete="off"
+            autocomplete="family-name"
             placeholder=" Entrer votre nom"
           />
           <br />
@@ -96,7 +98,7 @@
             id="prenom"
             name="prenom"
             required
-            autocomplete="off"
+            autocomplete="given-name"
             placeholder=" Entrer votre prénom"
           />
           <br />
@@ -107,7 +109,7 @@
             id="e-mail"
             name="e-mail"
             required
-            autocomplete="off"
+            autocomplete="email"
             placeholder=" Entrer votre E-mail"
           />
           <br />
@@ -118,57 +120,54 @@
             id="tel"
             name="tel"
             required
-            autocomplete="off"
+            autocomplete="tel"
             placeholder=" Entrer votre Téléphone"
           />
-          <br />
-          <br />
-          <legend><strong>Votre projet</strong></legend>
+          </fieldset>
+          <fieldset>
+            <legend>Votre projet</legend>
           <hr />
-          <label for="animal">Choississez un animal</label>
-          <select name="animal" id="" required>
-            <option value="">Choissisez un animal</option>
-            <option value="">Milo (chien)</option>
-            <option value="">Nala (chienne)</option>
-            <option value="">Biscuit (chien)</option>
-            <option value="">Pistache (chatte)</option>
-            <option value="">Gribouille (chat)</option>
-            <option value="">Moka (chatte)</option>
+          <label for="animal">Choisissez un animal</label>
+          <select name="animal" id="animal" required>
+            <option value="">Choisissez un animal</option>
+            <option value="milo">Milo (chien)</option>
+            <option value="nala">Nala (chienne)</option>
+            <option value="biscuit">Biscuit (chien)</option>
+            <option value="pistache">Pistache (chatte)</option>
+            <option value="gribouille">Gribouille (chat)</option>
+            <option value="moka">Moka (chatte)</option>
           </select>
           <br />
           <br />
-          <label for="logement"> Votre logement : </label>
+          <fieldset>
+            <legend>Votre logement</legend>
           <br />
-          <input type="radio" id="appartement" name="appartement" />
+          <input type="radio" id="appartement" name="logement" value="appartement" />
           <label for="appartement"> Appartement </label>
           <br />
-          <input type="radio" id="maison" name="maison" />
+          <input type="radio" id="maison" name="logement" value="maison" />
           <label for="maison"> Maison sans jardin </label>
           <br />
-          <input type="radio" id="maison_jardin" name="maison_jardin" />
+          <input type="radio" id="maison_jardin" name="logement" value="maison-avec-jardin" />
           <label for="maison_jardin"> Maison avec jardin </label>
+          </fieldset>
           <br />
-          <br />
-          <label for="animal"> Je possèdes un ou plusieur animal(aux) : </label>
-          <input type="checkbox" id="animal" />
+          <label for="animaux_existants">Je possède un ou plusieurs animaux :</label>
+          <input type="checkbox" id="animaux_existants" name="animaux_existants" value="oui" />
           <br />
           <br />
           <label for="message"> Quel est votre projet ? </label>
-          <textarea
-          id="message" 
-          cols="20" 
-          rows="5" 
-          placeholder=" Entrer votre message">
-          </textarea>
+          <textarea id="message" name="message" cols="30" rows="5" placeholder="Entrez votre message"></textarea>
           <br />
           <br />
           <label for="donnees">
             J'accepte que mes données soient utilisées pour traiter ma demande :
           </label>
-          <input type="checkbox" id="donnes" />
+          <input type="checkbox" id="donnees" name="consentement" value="oui" required />
           <br>
           <br>
           <button type="submit">Envoyer ma demande</button>
+          </fieldset>
         </fieldset>
       </form>
       <h2>Nous trouver</h2>
