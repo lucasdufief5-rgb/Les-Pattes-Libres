@@ -152,20 +152,24 @@
           <label for="maison_jardin"> Maison avec jardin </label>
           </fieldset>
           <br />
-          <label for="animaux_existants">Je possède un ou plusieurs animaux :</label>
+          <div class="formulaire_adopt_check">
+          <label for="animaux_existants">Je possède un ou plusieurs animaux : </label>
           <input type="checkbox" id="animaux_existants" name="animaux_existants" value="oui" />
+          </div>
           <br />
           <br />
           <label for="message"> Quel est votre projet ? </label>
           <textarea id="message" name="message" cols="30" rows="5" placeholder="Entrez votre message"></textarea>
           <br />
           <br />
-          <label for="donnees">
-            J'accepte que mes données soient utilisées pour traiter ma demande :
-          </label>
-          <input type="checkbox" id="donnees" name="consentement" value="oui" required />
-          <br>
-          <br>
+          <div class="formulaire_adopt_check">
+            <label for="donnees">
+              J'accepte que mes données soient utilisées pour traiter ma demande : 
+            </label>
+            <input type="checkbox" id="donnees" name="consentement" value="oui" required>
+            <br>
+            <br>
+          </div>
           <button type="submit">Envoyer ma demande</button>
           </fieldset>
         </fieldset>

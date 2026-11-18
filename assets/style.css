@@ -252,3 +252,14 @@ input[type='radio'] + label {
 button {
   margin-top: 20px;
 }
+
+.formulaire_adopt_check{
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.formulaire_adopt_check label{
+  margin-bottom: 12px;
+  margin-right : 5px;
+}
