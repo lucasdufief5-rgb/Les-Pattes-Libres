@@ -238,7 +238,7 @@ legend {
   padding: 0 5px;
 }
 
-/* sert a annuler la fonctionnaliter des balise br car il y avait trop d'espacement dans mon formulaire*/
+/* sert a annuler la fonctionnalité des balises br car il y avait trop d'espacement dans mon formulaire*/
 form br {
   display: none;
 }
