@@ -209,6 +209,9 @@ table {
   border-collapse: collapse;
   margin: 20px 0;
 }
+tr:nth-child(even){
+  background-color: #eee;
+}
 th,
 td {
   border: 1px solid #ccc;
@@ -275,4 +278,8 @@ button {
 .formulaire_adopt_check label{
   margin-bottom: 12px;
   margin-right : 5px;
+}
+
+.trouver p{
+  margin:3px 1px; 
 }
