@@ -145,7 +145,7 @@ td strong {
   font-size: 2rem;
   color: #1f6f6f;
 }
-/*grid-template-columns sert a creer des colonnes (3) et 1fr sert a ajuter la largeur sois la une part de l'espace disponible*/
+/*grid-template-columns sert a creer des colonnes (3) et 1fr sert a ajouter la largeur sois la une part de l'espace disponible*/
 .arrivants,
 .les_chiens,
 .les_chats {
